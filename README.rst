@@ -1,65 +1,23 @@
-LOFAR Transients Key Project
-============================
-TraP Description Paper
-----------------------
+robotopaper
+===========
 
-Being prepared for submission to `Astronomy \& Computing
-<http://www.journals.elsevier.com/astronomy-and-computing/>`_. You'll need the
-`elsarticle` document class and the `elsarticle-harv` bibliography style:
-these are included with TeX Live and, I suspect, most other TeX distributions,
-but if you don't have them on your system you can `download them from Elsevier
-<http://www.elsevier.com/latex>`_. After that, simply::
+A git-friendly, CMake-powered LaTeX-article template for those who prefer DIY to cloud solutions [*]. 
 
-  $ mkdir build
-  $ cd build
-  $ cmake ..
-  $ make
+This sort of thing will be overkill for some (most?). 
+However, the use of a fully-featured build system (CMake_) allows for a powerful
+combination of offline-usability and reproducible publications - with the right
+configuration of data, analysis scripts, and build scripts you could run your data-analysis, produce your plots, and compile the PDF with a single command.
 
-Please submit changes by pull request. 
+(Note that there's nothing quite so complex in this basic template - you'll need some CMake skills if you want to start getting clever).
+
+The original template was put together by `John Swinbank`_ for the TraP paper. This was filleted back to a bare-bones example (with a few added variables to keep things DRY_) by Tim Staley. BSD licensed, go forth and fork.
 
 
-Conventions
------------
 
-Indent your markup to show local structure of the document, e.g. in the figure 
-environment. 
-Use two spaces to indent. Do not use tabs.
+[*]: e.g. https://www.authorea.com/, https://www.overleaf.com/, https://www.sharelatex.com/
 
-As far as possible, use Computer Modern Roman in figures so as to match the
-body text. True- and OpenType versions are available for `download`_. Even
-better if you can keep it to a consistent size with the the other figures.
+.. _CMake: http://www.cmake.org/
+.. _DRY: http://en.wikipedia.org/wiki/Dont_repeat_yourself
+.. _John Swinbank: http://swinbank.org/
 
-.. _download: http://cm-unicode.sourceforge.net/
 
-Use a thin space (``\,``) between values and their units. Thus: ``1\,Jy``,
-``90\,MHz``.
-
-Use BibTeX keys of the form ``FirstAuthorSurname:Year``. Thus:
-``\citep{Bell:2001}``.
-
-Use a standard prefix for labels indicating the type of object to which it
-refers. Prefixes are:
-
-* Equation: ``eq`` (``\label{eq:myequation}``)
-* Figure: ``fig`` (``\label{fig:myfigure}``)
-* Section: ``seq`` (``\label{seq:mysection}``)
-* Table: ``tab`` (``\label{tab:mytable}``)
-
-Use braces (``{}``) around the contents of items in a list. Thus::
-
-  \begin{itemize}
-    \item{Item 1}
-    \item{Item 2}
-  \end{itemize}
-
-Use ``\code{}`` when including in-line snippets of sourcecode (``... the
-\code{FitsImage} class...``).
-
-`Data is a singular noun <http://nxg.me.uk/note/2005/singular-data/>`_. Thus
-"the data *is* processed".
-
-Spelling:
-
-* "artefact" (not "artifact").
-* "catalogue" (not "catalog").
-* "parallelization" (not "paralellisation").
