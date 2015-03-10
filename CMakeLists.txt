@@ -56,11 +56,6 @@ configure_file (
     @ONLY
 )
 
-configure_file (
-    ${PROJECT_SOURCE_DIR}/manuscript/minted.sty
-    ${PROJECT_BINARY_DIR}/minted.sty
-    COPYONLY
-)
 
 add_custom_command (
     OUTPUT ${PROJECT_BINARY_DIR}/${MANUSCRIPT_NAME}.pdf
