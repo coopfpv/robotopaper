@@ -10,14 +10,15 @@ configuration of data, analysis scripts, and build scripts you could run your da
 
 (Note that there's nothing quite so complex in this basic template - you'll need some CMake skills if you want to start getting clever).
 
-The original template was put together by `John Swinbank`_ for the TraP paper. This was filleted back to a bare-bones example (with a few added variables to keep things DRY_) by Tim Staley. BSD licensed, go forth and fork.
+The original template was put together by `John Swinbank`_ for the `TraP paper`_. 
+Filleted back to a bare-bones example by Tim Staley. 
+BSD licensed, go forth and fork.
 
 
 
 [*]: e.g. https://www.authorea.com/, https://www.overleaf.com/, https://www.sharelatex.com/
 
 .. _CMake: http://www.cmake.org/
-.. _DRY: http://en.wikipedia.org/wiki/Dont_repeat_yourself
 .. _John Swinbank: http://swinbank.org/
-
+.. _TraP paper: http://adsabs.harvard.edu/abs/2015arXiv150301526S
 
